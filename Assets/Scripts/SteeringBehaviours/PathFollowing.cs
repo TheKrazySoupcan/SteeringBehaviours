@@ -21,9 +21,10 @@ public class PathFollowing : MonoBehaviour
     {
         // SET graph to FindObjectOfType Graph
         // IF graph is null
-            // CALL Debug.LogError() and pass an Error message
-            // CALL Debug.Break() (pauses the editor)
-
+        if (graph == null)
+        {  // CALL Debug.LogError() and pass an Error message
+             // CALL Debug.Break() (pauses the editor)
+        }
     }
 
     // Update is called once per frame
